@@ -4,8 +4,57 @@ html, body {
     overflow:hidden;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
+
 #container {
     height: 100%;
     width: 100%;
     padding: 0;
+}   
+
+header, nav {
+    display:block;
 }
+
+#logo {
+    height:30px;
+    width:30px;
+}
+
+#headerName {
+  font-family: 'Montserrat', sans-serif;
+  color: #1114BF;
+  display: inline-block;
+}
+
+@media (max-width: 768px){
+#headerName {
+    font-size: 12px;
+}
+
+ #pagesList {
+     margin: 0;
+     padding: 0;
+     font-family: 'Arvo', serif;
+ }
+
+@media (min-width: 768px){
+.navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible!important;
+}}
+
+.navbar-collapse {
+    text-align: center;
+    max-height: 340px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.collapse {
+    display: none;
+}
+
